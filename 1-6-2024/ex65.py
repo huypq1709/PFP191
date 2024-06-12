@@ -3,11 +3,13 @@
 Sample List : ["abc", "xyz", "aba", "12321", "apple", "banana"]
 Expected Result: ['aba', '12321']
 """
-def check(aList):
-    for x in aList:
-        if str(x).startswith('1') == str(x).endswith('1'):
-            print(x)
+def find_strings(lst):
+    result = []
+    for s in lst:
+        if len(s) > 2 and s[0] == s[-1]:
+            result.append(s)
+    return result
 
-lst = ["abc", "xyz", "aba", "12321", "apple", "banana"]
-check(lst)
+sample_list = ["abc", "xyz", "aba", "12321", "apple", "banana"]
+print(find_strings(sample_list))
 
