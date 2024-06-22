@@ -14,8 +14,6 @@ def is_anagram(str1, str2):
     return workingCopy1 == workingCopy2
 def removeJunk(s):
     return ''.join([char for char in s if char.isalpha()])
-def sortString(s):
-    return ''.join(sorted(s))
 if __name__ == '__main__':
     s1 = input("Enter the first string: ")
     s2 = input("Enter the second string: ")
